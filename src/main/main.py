@@ -37,8 +37,7 @@ def timeContrast(timeNow: time.struct_time, openTime: str, closeTime: str) -> bo
         return False
 
 
-# Programe inplaces
-if __name__ == "__main__":
+def main():
     # init
     print('------ Login Begin ------')
     with open(configJsonFile, 'r') as file:
@@ -97,3 +96,8 @@ if __name__ == "__main__":
         else:
             print(f">INFO: Delay {delayTime} seconds.")
             time.sleep(delayTime)
+
+
+# Programe inplaces
+if __name__ == "__main__":
+    main()
